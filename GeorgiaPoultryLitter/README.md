@@ -39,7 +39,8 @@ For the metadata dataframe
 `all(attributes(TP3_16S_BetaDiv_uwunifrac_dm_sorted)$Labels == TP3_Metadata_sorted$SampleID)`
 
 6. Run the script
-`permanova.unbalanced(TP3_16S_BetaDiv_uwunifrac_dm_sorted,TP3_Metadata_sorted)`
+`permanova_unbalanced(TP3_16S_BetaDiv_uwunifrac_dm_sorted,TP3_Metadata_sorted)`
 
 
-
+## Benchmark ##
+Runtimes speeds were compared using the system.time() function in R. Function calls were enclosed in the run. The user portion is reported. 5 Seconds for `permanova_unbalanced()` compared to 514 seconds for `nested.npmanova()`
